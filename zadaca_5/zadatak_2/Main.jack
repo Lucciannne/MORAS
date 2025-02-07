@@ -1,0 +1,28 @@
+class Main {
+
+    function void main() {
+        var Vint vecA, vecB;
+
+        let vecA = Vint.new(3);
+        let vecB = Vint.new(3);
+        do vecA.printVec();
+        do vecB.printVec();
+        do Output.printInt(vecA.len());
+        do Output.println();
+        do Output.printInt(vecB.len());
+        do Output.println();
+
+        do vecA.set(0, 5);
+        do vecA.set(5, 7);
+        do vecB.set(1, 2);
+        do vecA.printVec();
+        do vecB.printVec();
+
+        do vecA.resize(2);
+        do vecA.printVec();
+
+        do Output.printInt(vecA.get(1));
+        do Output.println();
+        return;
+    }
+}
