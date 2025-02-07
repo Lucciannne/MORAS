@@ -1,0 +1,20 @@
+class Main {
+
+    function void main() {
+        var Array arr;
+
+        let arr = Array.new(5);
+
+        let arr[0] = 1;
+        let arr[1] = 1;
+        let arr[2] = 2;
+        let arr[3] = 3;
+        let arr[4] = 6;
+
+        do QuickSort.sort(A, 0, 4);
+        do QuickSort.printArray(A, 5);
+        do A.dispose();
+
+        return;
+    }
+}
